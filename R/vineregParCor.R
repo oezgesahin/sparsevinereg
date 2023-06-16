@@ -47,7 +47,7 @@ vineregParCor <- function(df, cores_vine){
     thr_caic <- mdl_caic
     count <- count + 1
   }
-  res_list <- list("method"="resid", "vinegraph"="Dvine","vars_indx"=single_vars,
+  res_list <- list("method"="ParCor", "vinegraph"="Dvine","vars_indx"=single_vars,
                    "vinereg_fit"=final_mdl)
 }
 
